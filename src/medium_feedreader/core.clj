@@ -79,8 +79,12 @@
                                 subscribe-to (set/difference medium-feeds feedbin-feeds)
                                 unsubscribe-from (set/difference feedbin-feeds medium-feeds)]
                             {:existing medium-feeds
-                             :subscribe (map subscribe #(subscribe-to % feedbin-options))
-                             :unsubscrribe (->> unsubscribe-from (map #(feed-id all-feedbin-feeds %)) (map #(unsubscribe % feedbin-options)))})))})}))
+                             :token token
+                             :id id
+                             :username username
+                             :password password
+                             :subscribe (map #(subscribe % feedbin-options) subscribe-to)
+                             :unsubscribe (map #(unsubscribe % feedbin-options) (->> unsubscribe-from (map #(feed-id all-feedbin-feeds %))))})))})}))
 
 (def app
   (api
