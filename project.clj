@@ -18,7 +18,7 @@
   :plugins [[test2junit "1.1.2"]
             [lein-environ "1.0.2"]
             [lein-aws-api-gateway "1.10.68-1"]
-            [lein-clj-lambda "0.4.0"]
+            [lein-clj-lambda "0.4.1"]
             [lein-maven-s3-wagon "0.2.5"]]
   :api-gateway {;:api-id "c8sc0xfjf7"
                 :swagger "target/swagger.json"}

@@ -1,4 +1,5 @@
 (ns medium-feedreader.core
+  (:gen-class)
   (:require [org.httpkit.client :as http]
             [less.awful.ssl :as ssl]
             [cheshire.core :as json]
@@ -96,3 +97,7 @@
       (context "/sync" [] sync-resource)))
 
 (defhandler medium-feedreader.core.Lambda app {})
+
+
+(defn -main [&args]
+  (println "I'm here"))
