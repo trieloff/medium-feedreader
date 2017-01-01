@@ -13,7 +13,7 @@ var Medium = function(apikey, cb) {
   }
   
   this.fulltextFeeds = function(mediumUrl) {
-    return "http://ftr.fivefilters.org/makefulltextfeed.php?url=" + mediumUrl.replace(/medium\.com\//, "medium.com/feed/");
+    return "https://www.freefullrss.com/feed.php?url=" + mediumUrl.replace(/medium\.com\//, "medium.com/feed/");
   }
   
   this.getPubs = function() {
@@ -65,7 +65,7 @@ var Feedbin = function(email, password, medium, cb) {
   }
   
   this.fulltextFeeds = function(mediumUrl) {
-    return "http://ftr.fivefilters.org/makefulltextfeed.php?url=" + mediumUrl.replace(/medium\.com\//, "medium.com/feed/");
+    return "https://www.freefullrss.com/feed.php?url=" + mediumUrl.replace(/medium\.com\//, "medium.com/feed/");
   }
   
   this.subscribe = function(url) {
