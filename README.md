@@ -4,9 +4,15 @@ Synchronizes Medium publications you follow with Feedbin subscriptions
 
 ## Installation
 
-FIXME
+```
+wt create feedsync.js
+```
 
+## Update
 
+```
+wt update feedsync feedsync.js
+```
 
 ## License
 
